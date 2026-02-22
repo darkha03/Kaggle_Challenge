@@ -36,10 +36,27 @@ A collection of machine learning projects solving real-world predictive challeng
 
 ---
 
+### 3. 🔢 Digit Recognizer: Handwritten Digit Classification
+**Challenge:** Classify handwritten digits (0-9) from pixel data  
+**Architecture:** Convolutional Neural Network (CNN)  
+**Dataset:** MNIST - 42,000 training images (28×28 pixels each)
+
+#### Key Highlights:
+- **Data preprocessing:** Normalized pixel values [0,255] → [0,1], reshaped flat vectors to 28×28×1 images
+- **CNN Architecture:** 3 convolutional layers with max pooling for feature extraction, dense layers for classification
+- **Model layers:** Conv2D (32 filters) → MaxPool → Conv2D (64 filters) → MaxPool → Conv2D (64 filters) → Dense layers
+- **Training:** 5 epochs with 80/20 train-validation split, Adam optimizer, sparse categorical crossentropy loss
+- **Performance tracking:** Real-time monitoring of training/validation accuracy and loss convergence
+
+**Notebooks:** [digit_recognizer.ipynb](digit_recognizer.ipynb) | [digit_recognizer.md](digit_recognizer.md)
+
+---
+
 ## 🛠️ Tech Stack
 - **Language:** Python 3
-- **Data Processing:** Pandas
+- **Data Processing:** Pandas, NumPy
 - **Machine Learning:** Scikit-Learn, XGBoost
+- **Deep Learning:** TensorFlow, Keras
 - **Visualization:** Matplotlib, Seaborn
 - **Environment:** Jupyter Notebooks
 
@@ -53,6 +70,8 @@ A collection of machine learning projects solving real-world predictive challeng
 - **Hyperparameter Tuning:** GridSearchCV for optimal model parameters
 - **Error Analysis:** Understanding validation vs. test accuracy gaps
 - **Regression & Classification:** Both supervised learning paradigms covered
+- **Deep Learning & CNNs:** Convolutional neural networks for image classification
+- **Data Normalization & Reshaping:** Preparing raw pixel data for neural networks
 
 ## 📈 Results Summary
 
@@ -60,6 +79,7 @@ A collection of machine learning projects solving real-world predictive challeng
 |---------|------|-----------|-------|
 | House Prices | Regression | XGBoost | 13% Error|
 | Titanic | Classification | Random Forest | 77% Accuracy |
+| Digit Recognizer | Image Classification | CNN (Deep Learning) | 5 Epochs Training |
 
 ## 📝 Notes
 
@@ -74,7 +94,7 @@ A collection of machine learning projects solving real-world predictive challeng
    git clone <repository-url>
    ```
 
-2. **Install dependencies:**
+2. **Install dependencnumpy scikit-learn xgboost matplotlib seaborn tensorflow
    ```bash
    pip install pandas scikit-learn xgboost matplotlib seaborn notebook
    ```
@@ -82,6 +102,7 @@ A collection of machine learning projects solving real-world predictive challeng
 3. **Download datasets from Kaggle:**
    - [House Prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)
    - [Titanic](https://www.kaggle.com/c/titanic)
+   - [Digit Recognizer](https://www.kaggle.com/c/digit-recognizer)
 
 4. **Run the notebooks:**
    ```bash

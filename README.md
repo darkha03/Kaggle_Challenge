@@ -38,7 +38,8 @@ A collection of machine learning projects solving real-world predictive challeng
 
 ### 3. 🔢 Digit Recognizer: Handwritten Digit Classification
 **Challenge:** Classify handwritten digits (0-9) from pixel data  
-**Architecture:** Convolutional Neural Network (CNN)  
+**Architecture:** Convolutional Neural Network (CNN)
+**Model Performance:** 94% Kaggle test accuracy
 **Dataset:** MNIST - 42,000 training images (28×28 pixels each)
 
 #### Key Highlights:
@@ -79,7 +80,7 @@ A collection of machine learning projects solving real-world predictive challeng
 |---------|------|-----------|-------|
 | House Prices | Regression | XGBoost | 13% Error|
 | Titanic | Classification | Random Forest | 77% Accuracy |
-| Digit Recognizer | Image Classification | CNN (Deep Learning) | 5 Epochs Training |
+| Digit Recognizer | Image Classification | CNN (Deep Learning) | 94% Accuracy |
 
 ## 📝 Notes
 

@@ -53,11 +53,29 @@ A collection of machine learning projects solving real-world predictive challeng
 
 ---
 
+### 4. 🌪️ Disaster Tweet Classification (NLP Getting Started)
+**Challenge:** Classify tweets as real disasters or non-disasters  
+**Model Performance:** 0.8041 validation F1 (DistilBERT)
+**Best Algorithm:** DistilBERT (Transformer fine-tuning)
+
+#### Key Highlights:
+- **Text feature fusion:** Combined `keyword`, `location`, and `text` for richer tweet context
+- **Cleaning pipeline:** Standardized URLs/mentions and removed noisy non-ASCII artifacts
+- **Model progression:** BiLSTM baseline -> BiLSTM + GloVe -> DistilBERT
+- **Threshold optimization:** Improved F1 by tuning decision thresholds on validation predictions
+- **Insight:** Transformer context understanding outperformed recurrent models on ambiguous tweets
+
+**Notebooks:** [disaster-tweet.ipynb](disaster-tweet.ipynb) | [disaster-tweet.md](disaster-tweet.md)
+
+---
+
 ## 🛠️ Tech Stack
 - **Language:** Python 3
 - **Data Processing:** Pandas, NumPy
 - **Machine Learning:** Scikit-Learn, XGBoost
 - **Deep Learning:** TensorFlow, Keras
+- **NLP:** Hugging Face Transformers, Datasets
+- **Backend for Transformers:** PyTorch
 - **Visualization:** Matplotlib, Seaborn
 - **Environment:** Jupyter Notebooks
 
@@ -73,6 +91,8 @@ A collection of machine learning projects solving real-world predictive challeng
 - **Regression & Classification:** Both supervised learning paradigms covered
 - **Deep Learning & CNNs:** Convolutional neural networks for image classification
 - **Data Normalization & Reshaping:** Preparing raw pixel data for neural networks
+- **NLP & Transformers:** Sequence classification, tokenization, and transfer learning with DistilBERT
+- **Metric Optimization:** F1-focused threshold tuning for imbalanced and noisy text tasks
 
 ## 📈 Results Summary
 
@@ -81,6 +101,7 @@ A collection of machine learning projects solving real-world predictive challeng
 | House Prices | Regression | XGBoost | 13% Error|
 | Titanic | Classification | Random Forest | 77% Accuracy |
 | Digit Recognizer | Image Classification | CNN (Deep Learning) | 94% Accuracy |
+| Disaster Tweets | NLP Classification | DistilBERT | 0.8041 F1 (Validation) |
 
 ## 📝 Notes
 
@@ -95,15 +116,16 @@ A collection of machine learning projects solving real-world predictive challeng
    git clone <repository-url>
    ```
 
-2. **Install dependencnumpy scikit-learn xgboost matplotlib seaborn tensorflow
+2. **Install dependencies**
    ```bash
-   pip install pandas scikit-learn xgboost matplotlib seaborn notebook
+   pip install pandas numpy scikit-learn xgboost matplotlib seaborn tensorflow transformers datasets torch notebook
    ```
 
 3. **Download datasets from Kaggle:**
    - [House Prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)
    - [Titanic](https://www.kaggle.com/c/titanic)
    - [Digit Recognizer](https://www.kaggle.com/c/digit-recognizer)
+   - [NLP Getting Started (Disaster Tweets)](https://www.kaggle.com/c/nlp-getting-started)
 
 4. **Run the notebooks:**
    ```bash
